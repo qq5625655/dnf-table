@@ -1,4 +1,4 @@
-import Layout from "../components/layout";
+import { CustomLayout } from '../components/layout'
 export default function RootLayout({
   children,
 }: {
@@ -7,7 +7,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Layout>{children}</Layout>
+        <CustomLayout>
+        {children}
+        </CustomLayout>
+        
       </body>
     </html>
   );
